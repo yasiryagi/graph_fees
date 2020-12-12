@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="graphics.txt" width=800><br/>
+  <img src="grendizer.jpg" width=800><br/>
   <i>Input image</i>
 </p>
 
