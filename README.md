@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="grendizer_.jpg" width=800><br/>
+  <img src="grendizer.jpg" width=200><br/>
   <i>Input image</i>
 </p>
 
