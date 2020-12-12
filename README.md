@@ -18,3 +18,5 @@ python3 fees table.py <0x6c0fadd48e7e236bb10f7d69148be5502a18ca57>
 
 ## Note
 Run at least once to provide a baseline!
+
+ 🤑  🤑  🤑  🤑  🤑  🤑  🤑 
