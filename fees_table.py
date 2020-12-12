@@ -40,11 +40,11 @@ def Requst_data(URL, REQUEST_QUERY):
     try:
         response = requests.post( URL, json=REQUEST_QUERY )
     except requests.exceptions.RequestException as e:
-        sys.exit("etwork Failure")
+        sys.exit("Network Failure")
     try:
         result = response.json()['data']['indexers']
     except ValueError:
-        sys.exit("etwork Failure")
+        sys.exit("Network Failure")
     return result
 
 def find_id(data, id_):
@@ -70,8 +70,8 @@ def delta_data(data):
             time_delta = (line['timestamp'] - data[counter]['timestamp']) / 60
             queryFeesCollected_delta = (int(line['queryFeesCollected']) - int(data[counter]['queryFeesCollected'])) / 1000000000000000000
             queryFeeRebates_delta = ( int(line['queryFeeRebates']) - int(data[counter]['queryFeeRebates'])) / 1000000000000000000
-            fees_rate = queryFeesCollected_delta / (time_delta * 60)
-        delta_dic = {'Time': line['time'], 'Time Delta': time_delta, 'Query Fees Collected': queryFeesCollected_delta, 'Fees Rate': fees_rate, 'Query Fee Rebates': queryFeeRebates_delta}
+            fees_rate = queryFeesCollected_delta / time_delta
+        delta_dic = {'Time': line['time'], 'Time Delta (mins)': time_delta, 'Query Fees Collected': queryFeesCollected_delta, 'Fees Rate': fees_rate, 'Query Fee Rebates': queryFeeRebates_delta}
         result.append(delta_dic)
         counter += 1
     return result
