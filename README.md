@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="grendizer.jpg" width=200><br/>
+  <img src="logo/grendizer.jpg" width=200><br/>
 </p>
 
 # Description
