@@ -1,1 +1,1 @@
-[{"query": "{ indexers { id queryFeesCollected queryFeeRebates} }", "URL": "https://gateway-testnet.thegraph.com/network"}]
+[{"query": "{ indexers (first:1000) { id queryFeesCollected queryFeeRebates} }", "URL": "https://gateway-testnet.thegraph.com/network"}]
